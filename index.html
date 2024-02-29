@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./passwordCheck.js" defer></script>
 </head>
 <body>
     <div id="container">
@@ -46,14 +47,14 @@
                             <input type="tel" name="phone" id="phone" class="normal-text">
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row error">
                         <div>
                             <label for="password" class="minimal-text">PASSWORD</label>
-                            <input type="password" name="password" id="password" class="normal-text">
+                            <input type="password" name="password" id="password" class="normal-text" required>
                         </div>
                         <div>
                             <label for="confirmPassword" class="minimal-text">CONFIRM PASSWORD</label>
-                            <input type="password" name="confirmPassword" id="confirmPassword" class="normal-text">
+                            <input type="password" name="confirmPassword" id="confirmPassword" class="normal-text" required>
                         </div>
                     </div>
                 </form>

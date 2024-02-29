@@ -103,6 +103,26 @@ input:focus {
     box-shadow: 1px 1px 3px #bdbdbd;
 }
 
+.error {
+    position: relative;
+}
+
+.error input {
+    border: 1px solid #f51707;
+}
+
+/* Error message that dissapears if the passwords match */
+.error::after {
+    color: #f51707;
+    font-size: 0.7rem;
+    font-weight: 400;
+
+    content: "*Password fields empty or passwords do not match";
+    position: absolute;
+    top: 55px;
+    width: 100%;
+}
+
 button[type="submit"] {
     border: 0;
     border-radius: 7px;
